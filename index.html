@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href="style.css"/>
+    <link rel = "stylesheet" href="mediaquerry.css" />
+</head>
+<body>
+    <nav id="Mainpage">
+        <div class="logoname">Thin</div> 
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#projects">Project</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <nav id="Mobile">
+        <div class="logomobile"> Thin</div>
+        <div class="mobile-menu">
+            <div class="mobile-icons" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Project</a></li>
+        </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <div class="profile-pic">
+            <img src="assets/profile.png" alt="thin-pfp">
+        </div>
+
+        <div class="nametag">
+            <h1 class="name">Thin(Luna SuTianer)</h1>
+            <p class="jobtag">Web Developer</p>
+        </div>
+
+        <div class="button-container">
+            <button class="button1" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+
+            <button class="button2" onclick="location.href= './#contact'">Contact</button>
+
+
+        </div>
+
+        <div class="sociallinks">
+            <img src="assets/youtube-2712573_640.png" alt="youtube" onclick="socialclick('youtube')">
+
+            <img src="assets/facebooklogo.png" alt="facebook" onclick="socialclick('facebook')">
+
+        </div>
+
+
+    </section>
+
+    <section id="contact">
+        <div class="contact-title">
+        <p class="reachme">Reach me at</p>
+        <h1 class = "Email">Email contact: nguyendonthinhlunax@gmail.com</h1>
+        </div>
+
+        <div class="email-logo">
+          <img src="assets/logogmail.png" alt="gmail" onclick="clickEmail()">
+        </div>
+
+    </section>
+
+    <section id="projects">
+        <div class="project-intro">
+            <p class="browse-invite">Browse my recent</p>
+            <h1 class="projects-word">Projects</h1>
+            
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
